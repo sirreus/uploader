@@ -10,13 +10,13 @@ def post_detail(request):
     context = {
         "title": "Detail"
     }
-    return render(request, 'index.html', context)
+    return render(request, 'posts/index.html', context)
 
 def post_list(request):
     context = {
         "title": "List"
     }
-    return render(request, 'index.html', context)
+    return render(request, 'posts/index.html', context)
 
 def post_update(request):
     return HttpResponse("<h1>Update</h1>")
